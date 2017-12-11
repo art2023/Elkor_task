@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="login-page">
+<div class="form">
+    <img src="elkor_logo.png">
+    <form class="LoginForm">
+        <h1>Login Form</h1>
+        <div class="inputBox">
+            <input type="text" name="" required="" id="Login"/>
+            <label>Login</label>
+        </div>
+       <div class="inputBox">
+            <input type="password" name="" required="" id="Password"/>
+            <label>Password</label>
+        </div>
+        <input type="submit" value="Enter" id="Enter" onclick="showData()">
+        <input type="submit" value="Registration" id="Registration">
+    </form>
+    <form class="RegistrationForm">
+        <h1>Registration Form</h1>
+        <div class="inputBox">
+            <input type="text" name="" required="" id="LoginRegistration">
+            <label>Login</label>
+        </div>
+        <div class="inputBox">
+            <input type="password" name="" required="" id="PasswordRegistration">
+            <label>Password</label>
+        </div>
+        <div class="inputBox">
+            <input type="text" name="" required="" id="NameRegistration">
+            <label>Name</label>
+        </div>
+        <input type="submit" value="Save" id="Save" onclick="save_data()">
+        <input type="submit" value="Return" id="Return">
+    </form>
+</div>
+</div>
+
+<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+<script src="script.js"></script>
+
+</body>
+</html>

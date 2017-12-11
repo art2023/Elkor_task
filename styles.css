@@ -1,0 +1,129 @@
+body
+{
+    font-family: "Arial Narrow";
+    padding: 0;
+    margin: 0;
+    background: url(city.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.login-page{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form{
+    z-index: 1;
+    max-width: 400px;
+    min-width: 270px;
+    padding: 40px;
+    background: rgba(255,255,255,.8);
+    box-sizing: border-box;
+    box-shadow: 0px 15px 35px white;
+    border-radius: 10px;
+}
+
+.form img
+{
+    position: relative;
+    margin-left: 25%;
+    margin-right: 30%;
+    max-width: 50%;
+}
+
+.form h1
+{
+    margin: 0 0 30px;
+    color: black;
+    text-align: center;
+}
+
+.form .inputBox
+{
+    position: relative;
+}
+
+.form .inputBox input
+{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+
+.form .inputBox label
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+
+}
+
+.form .inputBox input:focus ~ label,
+.form .inputBox input:valid ~ label
+{
+    top: -18px;
+    left: 0;
+    color: blue;
+    font-size: 14px;
+}
+
+.form  input[type="submit"]
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    background: blue;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form  input[type="submit"]:focus
+{
+    color: black;
+    background: grey;
+}
+
+#Registration
+{
+    float: right;
+}
+
+#Registration:focus
+{
+    color: black;
+    background: grey;
+}
+
+#Return
+{
+    float: right;
+}
+
+#Return:focus
+{
+    color: black;
+    background: grey;
+}
+
+.form .RegistrationForm
+{
+    display: none;
+}
